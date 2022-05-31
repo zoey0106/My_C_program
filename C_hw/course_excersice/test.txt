@@ -1,0 +1,4 @@
+struct part *
+&par1
+part_ptr
+(*p).number = p -> number

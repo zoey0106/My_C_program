@@ -1,0 +1,14 @@
+name: name.o a.o b.o
+	gcc -o name name.o a.o b.o
+	 
+name.o: name.c a.h b.h
+	gcc -c name.c
+	 
+a.o: a.c a.h
+	gcc -c a.c
+	 
+b.o: b.c b.h
+	gcc -c b.c
+clean:
+	del -rf *.o //在我的筆電
+	rm -r *.o //在linux系統
